@@ -82,7 +82,6 @@
 				AC38ACC2201F7BBD00C2B34D /* Supporting Files */,
 				AC38ACC1201F7BAC00C2B34D /* Resources */,
 				AC38ACBF201F7B3100C2B34D /* View Controllers */,
-				AC38ACA6201F7AC000C2B34D /* Assets.xcassets */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -115,6 +114,7 @@
 		AC38ACC1201F7BAC00C2B34D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC38ACA6201F7AC000C2B34D /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
