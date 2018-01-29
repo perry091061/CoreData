@@ -77,12 +77,12 @@
 		AC38AC9E201F7AC000C2B34D /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				AC38AC9F201F7AC000C2B34D /* AppDelegate.swift */,
-				AC38ACA1201F7AC000C2B34D /* ViewController.swift */,
-				AC38ACA3201F7AC000C2B34D /* Main.storyboard */,
+				AC38ACC0201F7B9C00C2B34D /* Application Delegate */,
+				AC38ACC4201F7BD900C2B34D /* Storyboards */,
+				AC38ACC2201F7BBD00C2B34D /* Supporting Files */,
+				AC38ACC1201F7BAC00C2B34D /* Resources */,
+				AC38ACBF201F7B3100C2B34D /* View Controllers */,
 				AC38ACA6201F7AC000C2B34D /* Assets.xcassets */,
-				AC38ACA8201F7AC000C2B34D /* LaunchScreen.storyboard */,
-				AC38ACAB201F7AC000C2B34D /* Info.plist */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -94,6 +94,54 @@
 				AC38ACB6201F7AC000C2B34D /* Info.plist */,
 			);
 			path = NotesTests;
+			sourceTree = "<group>";
+		};
+		AC38ACBF201F7B3100C2B34D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC38ACC3201F7BC900C2B34D /* Root View Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AC38ACC0201F7B9C00C2B34D /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				AC38AC9F201F7AC000C2B34D /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		AC38ACC1201F7BAC00C2B34D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC38ACC2201F7BBD00C2B34D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC38ACAB201F7AC000C2B34D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC38ACC3201F7BC900C2B34D /* Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC38ACA1201F7AC000C2B34D /* ViewController.swift */,
+			);
+			path = "Root View Controller";
+			sourceTree = "<group>";
+		};
+		AC38ACC4201F7BD900C2B34D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AC38ACA8201F7AC000C2B34D /* LaunchScreen.storyboard */,
+				AC38ACA3201F7AC000C2B34D /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
