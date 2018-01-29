@@ -15,6 +15,7 @@
 		AC38ACB5201F7AC000C2B34D /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38ACB4201F7AC000C2B34D /* NotesTests.swift */; };
 		ACF061AA201F7D85005DE663 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF061A9201F7D85005DE663 /* CoreDataManager.swift */; };
 		ACF061AD201FADEF005DE663 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACF061AB201FADEF005DE663 /* Notes.xcdatamodeld */; };
+		ACF061B0201FB33B005DE663 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF061AF201FB33B005DE663 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		AC38ACB6201F7AC000C2B34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACF061A9201F7D85005DE663 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		ACF061AC201FADEF005DE663 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
+		ACF061AF201FB33B005DE663 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		AC38AC93201F7AC000C2B34D = {
 			isa = PBXGroup;
 			children = (
+				ACF061AF201FB33B005DE663 /* Default-568h@2x.png */,
 				AC38AC9E201F7AC000C2B34D /* Notes */,
 				AC38ACB3201F7AC000C2B34D /* NotesTests */,
 				AC38AC9D201F7AC000C2B34D /* Products */,
@@ -81,13 +84,13 @@
 		AC38AC9E201F7AC000C2B34D /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				ACF061AE201FB193005DE663 /* Core Data Model */,
+				ACF061AE201FB193005DE663 /* CoreDataModel */,
 				ACF061A8201F7D5C005DE663 /* Managers */,
 				AC38ACC0201F7B9C00C2B34D /* Application Delegate */,
 				AC38ACC4201F7BD900C2B34D /* Storyboards */,
 				AC38ACC2201F7BBD00C2B34D /* Supporting Files */,
 				AC38ACC1201F7BAC00C2B34D /* Resources */,
-				AC38ACBF201F7B3100C2B34D /* View Controllers */,
+				AC38ACBF201F7B3100C2B34D /* ViewControllers */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -101,12 +104,12 @@
 			path = NotesTests;
 			sourceTree = "<group>";
 		};
-		AC38ACBF201F7B3100C2B34D /* View Controllers */ = {
+		AC38ACBF201F7B3100C2B34D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				AC38ACC3201F7BC900C2B34D /* Root View Controller */,
 			);
-			path = "View Controllers";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		AC38ACC0201F7B9C00C2B34D /* Application Delegate */ = {
@@ -158,12 +161,12 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		ACF061AE201FB193005DE663 /* Core Data Model */ = {
+		ACF061AE201FB193005DE663 /* CoreDataModel */ = {
 			isa = PBXGroup;
 			children = (
 				ACF061AB201FADEF005DE663 /* Notes.xcdatamodeld */,
 			);
-			path = "Core Data Model";
+			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC38ACAA201F7AC000C2B34D /* LaunchScreen.storyboard in Resources */,
+				ACF061B0201FB33B005DE663 /* Default-568h@2x.png in Resources */,
 				AC38ACA7201F7AC000C2B34D /* Assets.xcassets in Resources */,
 				AC38ACA5201F7AC000C2B34D /* Main.storyboard in Resources */,
 			);
@@ -427,7 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3KK877RGRD;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = "Notes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.perrydavies.RecordAndPlay.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,7 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3KK877RGRD;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = "Notes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.perrydavies.RecordAndPlay.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
