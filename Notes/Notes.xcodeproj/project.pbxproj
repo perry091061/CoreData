@@ -13,6 +13,7 @@
 		AC38ACA7201F7AC000C2B34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC38ACA6201F7AC000C2B34D /* Assets.xcassets */; };
 		AC38ACAA201F7AC000C2B34D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC38ACA8201F7AC000C2B34D /* LaunchScreen.storyboard */; };
 		AC38ACB5201F7AC000C2B34D /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38ACB4201F7AC000C2B34D /* NotesTests.swift */; };
+		ACF061AA201F7D85005DE663 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF061A9201F7D85005DE663 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		AC38ACB0201F7AC000C2B34D /* NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC38ACB4201F7AC000C2B34D /* NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTests.swift; sourceTree = "<group>"; };
 		AC38ACB6201F7AC000C2B34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF061A9201F7D85005DE663 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		AC38AC9E201F7AC000C2B34D /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				ACF061A8201F7D5C005DE663 /* Managers */,
 				AC38ACC0201F7B9C00C2B34D /* Application Delegate */,
 				AC38ACC4201F7BD900C2B34D /* Storyboards */,
 				AC38ACC2201F7BBD00C2B34D /* Supporting Files */,
@@ -142,6 +145,14 @@
 				AC38ACA3201F7AC000C2B34D /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ACF061A8201F7D5C005DE663 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ACF061A9201F7D85005DE663 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF061AA201F7D85005DE663 /* CoreDataManager.swift in Sources */,
 				AC38ACA2201F7AC000C2B34D /* ViewController.swift in Sources */,
 				AC38ACA0201F7AC000C2B34D /* AppDelegate.swift in Sources */,
 			);
