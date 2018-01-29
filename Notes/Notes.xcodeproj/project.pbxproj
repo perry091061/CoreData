@@ -14,6 +14,7 @@
 		AC38ACAA201F7AC000C2B34D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC38ACA8201F7AC000C2B34D /* LaunchScreen.storyboard */; };
 		AC38ACB5201F7AC000C2B34D /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38ACB4201F7AC000C2B34D /* NotesTests.swift */; };
 		ACF061AA201F7D85005DE663 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF061A9201F7D85005DE663 /* CoreDataManager.swift */; };
+		ACF061AD201FADEF005DE663 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACF061AB201FADEF005DE663 /* Notes.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		AC38ACB4201F7AC000C2B34D /* NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTests.swift; sourceTree = "<group>"; };
 		AC38ACB6201F7AC000C2B34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACF061A9201F7D85005DE663 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		ACF061AC201FADEF005DE663 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		AC38AC9E201F7AC000C2B34D /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				ACF061AE201FB193005DE663 /* Core Data Model */,
 				ACF061A8201F7D5C005DE663 /* Managers */,
 				AC38ACC0201F7B9C00C2B34D /* Application Delegate */,
 				AC38ACC4201F7BD900C2B34D /* Storyboards */,
@@ -153,6 +156,14 @@
 				ACF061A9201F7D85005DE663 /* CoreDataManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		ACF061AE201FB193005DE663 /* Core Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACF061AB201FADEF005DE663 /* Notes.xcdatamodeld */,
+			);
+			path = "Core Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				ACF061AA201F7D85005DE663 /* CoreDataManager.swift in Sources */,
 				AC38ACA2201F7AC000C2B34D /* ViewController.swift in Sources */,
 				AC38ACA0201F7AC000C2B34D /* AppDelegate.swift in Sources */,
+				ACF061AD201FADEF005DE663 /* Notes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +516,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACF061AB201FADEF005DE663 /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACF061AC201FADEF005DE663 /* Notes.xcdatamodel */,
+			);
+			currentVersion = ACF061AC201FADEF005DE663 /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AC38AC94201F7AC000C2B34D /* Project object */;
 }
