@@ -60,10 +60,11 @@ final class CoreDataManager
     
     private lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
         let fileManager = FileManager.default
-        let storeName = "\(self.modelName).sqlite"
+        let storeName = "\(self.modelName!).sqlite"
         var documentDirectoryURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
         let persistentStoreURL = documentDirectoryURL.appendingPathComponent(storeName)
         let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: managedObjectModel)
+        print(documentDirectoryURL)
         do
         {
         try persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType , configurationName: nil, at: persistentStoreURL, options: nil)
