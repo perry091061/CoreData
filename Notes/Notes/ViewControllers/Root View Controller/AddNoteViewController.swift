@@ -19,9 +19,13 @@ class AddNoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "Add Note"
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        titleTextField.becomeFirstResponder()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -29,29 +33,26 @@ class AddNoteViewController: UIViewController {
     
     
     @IBAction func save(sender: UIBarButtonItem) {
+        guard let managedObjectContext = managedObjectContext else { return }
+        
         guard let title = titleTextField.text, !title.isEmpty else {
             // Title field is manditory
                showAlert(with: "Title Missing!", and: "your note does not have a title?")
             return
         }
         
-        addNote()
-        
-        _ = navigationController?.popViewController(animated: true)
-    }
-
-    func addNote() {
-        guard let context = managedObjectContext else {
-            return
-        }
         // Create note
-        let note = Note(context: context)
+        let note = Note(context: managedObjectContext)
         // Configure note
         note.createdAt = Date()
         note.updatedAt = Date()
         note.title = titleTextField.text
         note.contents = contentTextView.text
+        
+        _ = navigationController?.popViewController(animated: true)
     }
+
+     
     /*
     // MARK: - Navigation
 

@@ -9,7 +9,7 @@
 import CoreData
 final class CoreDataManager
 {
-    private let modelName: String!
+    private let modelName: String
     
     init(modelName: String)
     {
@@ -20,7 +20,7 @@ final class CoreDataManager
     func setupNotificationHandling() {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(saveChanges(_:)), name: Notification.Name.UIApplicationWillTerminate , object: nil)
-        notificationCenter.addObserver(self, selector: #selector(saveChanges(_:)), name: Notification.Name.UIApplicationWillTerminate , object: nil)
+        notificationCenter.addObserver(self, selector: #selector(saveChanges(_:)), name: Notification.Name.UIApplicationDidEnterBackground , object: nil)
     }
     
     @objc func saveChanges(_ notification:Notification) {
@@ -60,7 +60,7 @@ final class CoreDataManager
     
     private lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
         let fileManager = FileManager.default
-        let storeName = "\(self.modelName!).sqlite"
+        let storeName = "\(self.modelName).sqlite"
         var documentDirectoryURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
         let persistentStoreURL = documentDirectoryURL.appendingPathComponent(storeName)
         let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: managedObjectModel)
@@ -70,7 +70,9 @@ final class CoreDataManager
         try persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType , configurationName: nil, at: persistentStoreURL, options: nil)
         }
         catch
-        {}
+        {
+            print("\(error), \(error.localizedDescription)")
+        }
         return persistentStoreCoordinator
     }()
     
